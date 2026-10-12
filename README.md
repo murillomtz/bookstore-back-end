@@ -1,57 +1,34 @@
 <div align="center">
 
-# Bookstore Application
-
-# Sobre o projeto
-
-A aplicação consiste em uma livraria que fornece um gerenciamento de livros, onde podemos listar, criar, editar e
-excluir livros e categorias.
-
-## Layout web
-
-<p align="center">
-<img src="https://img.shields.io/badge/HTML%20-%23F7DF1E.svg?&style=for-the-badge&color=E34F26" />&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/css%20-%23F7DF1E.svg?&style=for-the-badge&color=5BA8EE" />&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/JavaScript%20-%23F7DF1E.svg?&style=for-the-badge&color=F7DF1E" />&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Angular%20-%23F7DF1E.svg?&style=for-the-badge&color=DD0031" />&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Java%20-%23F7DF1E.svg?&style=for-the-badge&color=F7DF1E" />&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Git flow%20-%23F7DF1E.svg?&style=for-the-badge&color=000" />&nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Heroku %20-%23F7DF1E.svg?&style=for-the-badge&color=E34F26" />&nbsp;&nbsp;
-</p>
-
-<p align="center">
-	<a href="https://github.com/murillomtz"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
-	<a href="https://www.linkedin.com/in/murillo-mtz/"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
-	<a href="https://www.instagram.com/en.controll/"><img src="https://img.icons8.com/bubbles/50/000000/instagram.png" alt="Instagram"/></a>
-</p>
-
-Ao longo do projeto, foram abordadas boas práticas de Engenharia de Software tais como desenvolvimento em camadas e
-tratamento de exceções.
-
+# Backend da Livraria
 
 </div>
 
-# Tecnologias utilizadas
+## Sobre o projeto
 
-## Back end
+API para gerenciar livros e categorias de uma livraria, com operações de consulta, criação, edição e remoção.
+
+## Tecnologias principais
 
 - Java
 - Spring Boot
-- JPA / Hibernate
-- MySQL (Banco Produção)
-- H2 (Banco de Teste)
+- Spring Data JPA
+- Maven
 
-## Front end
+## Relação com o frontend
 
-- HTML / CSS
-- Angular 10 e 11
-- Angular Material
+O frontend Angular correspondente está em [Bookstore Front End](https://github.com/murillomtz/bookstore-front-end). Ele consome os recursos de livros e categorias fornecidos por esta API.
 
-## Implantação em produção
+## Executar
 
-- Back end: Heroku
-- Front end web: github.io
+Com JDK e Maven:
 
+```bash
+./mvnw spring-boot:run
+```
 
+No Windows, use `mvnw.cmd spring-boot:run`. Confira as configurações em `src/main/resources` para definir o banco de dados e a porta. O frontend possui uma URL de API configurável em seus arquivos de ambiente.
 
+## Interface
 
+O repositório é o backend. Para capturas de tela da interface, consulte o projeto Angular relacionado.
